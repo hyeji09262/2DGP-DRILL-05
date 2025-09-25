@@ -6,5 +6,7 @@ grass = load_image('TUK_GROUND.png')
 character = load_image('animation_sheet.png')
 
 x, y = 400, 300
+frame = 0
+dir_x, dir_y = 0, 0
 
 close_canvas()
