@@ -43,11 +43,21 @@ while running:
     clear_canvas()
     background.draw(400,300)
 
+    if dir_x > 0:
+        face_dir = 1
+    elif dir_x < 0:
+        face_dir = -1
+
     if dir_x != 0 or dir_y != 0:
         if face_dir == 1:
          character.clip_draw(frame * 100, 100 , 100, 100, x, y)
         else:
             character.clip_draw(frame * 100, 0 , 100, 100, x, y)
+    else:
+        if face_dir == 1:
+            character.clip_draw(0, 300, 100, 100, x, y)
+        else:
+            character.clip_draw(0, 200, 100, 100, x, y)
 
     update_canvas()
     handle_events()
