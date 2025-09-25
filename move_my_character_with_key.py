@@ -14,6 +14,9 @@ running = True
 def handle_events():
     global running, dir_x, dir_y
     events = get_events()
+    for event in events:
+        if event.type == SDL_QUIT:
+            running = False
 
 while running:
     clear_canvas()
