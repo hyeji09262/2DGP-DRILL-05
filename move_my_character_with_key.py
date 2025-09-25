@@ -11,4 +11,6 @@ dir_x, dir_y = 0, 0
 
 running = True
 
+def handle_events():
+
 close_canvas()
