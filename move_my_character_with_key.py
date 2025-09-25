@@ -12,5 +12,7 @@ dir_x, dir_y = 0, 0
 running = True
 
 def handle_events():
+    global running, dir_x, dir_y
+    events = get_events()
 
 close_canvas()
