@@ -1,8 +1,8 @@
 from pico2d import *
 
 
-open_canvas(800,600)
-grass = load_image('TUK_GROUND.png')
+open_canvas()
+background = load_image('TUK_GROUND.png')
 character = load_image('animation_sheet.png')
 
 x, y = 400, 300
@@ -40,7 +40,7 @@ def handle_events():
 
 while running:
     clear_canvas()
-    grass.draw(400, 30)
+    background.draw(400,300)
     character.clip_draw(frame * 100, 100, 100, 100, x, y)
     update_canvas()
     handle_events()
