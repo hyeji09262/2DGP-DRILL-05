@@ -64,6 +64,10 @@ while running:
     frame = (frame + 1) % 8
     x += dir_x * 5
     y += dir_y * 5
+
+    x = max(30, min(x, 770))
+    y = max(30, min(y, 550))
+
     delay(0.05)
 
 close_canvas()
