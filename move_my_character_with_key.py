@@ -20,6 +20,8 @@ def handle_events():
         elif event.type == SDL_KEYDOWN:
             if event.key == SDLK_RIGHT:
                 dir_x += 1
+        elif event.key == SDLK_UP:
+            dir_y += 1
 
 while running:
     clear_canvas()
