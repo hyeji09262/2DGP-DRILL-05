@@ -8,6 +8,7 @@ character = load_image('animation_sheet.png')
 x, y = 400, 300
 frame = 0
 dir_x, dir_y = 0, 0
+face_dir = 1
 
 running = True
 
@@ -41,7 +42,13 @@ def handle_events():
 while running:
     clear_canvas()
     background.draw(400,300)
-    character.clip_draw(frame * 100, 100, 100, 100, x, y)
+
+    if dir_x != 0 or dir_y != 0:
+        if face_dir == 1:
+         character.clip_draw(frame * 100, 100 , 100, 100, x, y)
+        else:
+            character.clip_draw(frame * 100, 0 , 100, 100, x, y)
+
     update_canvas()
     handle_events()
     frame = (frame + 1) % 8
