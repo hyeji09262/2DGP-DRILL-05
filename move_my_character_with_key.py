@@ -15,4 +15,8 @@ def handle_events():
     global running, dir_x, dir_y
     events = get_events()
 
+while running:
+    clear_canvas()
+    grass.draw(400, 30)
+
 close_canvas()
