@@ -33,7 +33,7 @@ frame = 0
 dir = 0
 
 while running:
-    close_canvas()
+    clear_canvas()
     grass.draw(400, 30)
     character.clip_draw(frame * 100, 100, 100, 100, x, 90)
     update_canvas()
