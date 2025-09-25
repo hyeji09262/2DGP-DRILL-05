@@ -9,4 +9,6 @@ x, y = 400, 300
 frame = 0
 dir_x, dir_y = 0, 0
 
+running = True
+
 close_canvas()
