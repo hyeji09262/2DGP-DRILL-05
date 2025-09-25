@@ -71,3 +71,5 @@ while running:
     delay(0.05)
 
 close_canvas()
+
+#작동완료
