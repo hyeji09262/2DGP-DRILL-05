@@ -55,9 +55,10 @@ while running:
             character.clip_draw(frame * 100, 0 , 100, 100, x, y)
     else:
         if face_dir == 1:
-            character.clip_draw(0, 300, 100, 100, x, y)
+            character.clip_draw(frame * 100, 300, 100, 100, x, y)
         else:
-            character.clip_draw(0, 200, 100, 100, x, y)
+            character.clip_draw(frame * 100, 200, 100, 100, x, y)
+        delay(0.1)
 
     update_canvas()
     handle_events()
