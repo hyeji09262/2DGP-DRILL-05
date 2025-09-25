@@ -24,6 +24,8 @@ def handle_events():
             dir_x -= 1
         elif event.key == SDLK_UP:
             dir_y += 1
+        elif event.key == SDLK_DOWN:
+            dir_y -= 1
 
 while running:
     clear_canvas()
